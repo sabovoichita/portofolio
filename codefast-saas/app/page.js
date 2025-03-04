@@ -8,6 +8,7 @@ export default function Home() {
           <h2 className="card-title">Hello DaisyUI!</h2>
           <p>If you see this, DaisyUI is working.</p>
           <p className="text-red-500">Is this text red?</p>
+          <button className="btn btn-primary">Start now</button>
         </div>
       </div>
     </main>
