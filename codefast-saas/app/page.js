@@ -1,5 +1,7 @@
 import ButtonLogin from "@/components/ButtonLogin";
 import FAQListItem from "@/components/FAQListItem";
+import Image from "next/image";
+import productDemo from "@/app/productDemo.jpeg";
 
 export default function Home() {
   const isLoggedIn = true;
@@ -25,6 +27,8 @@ export default function Home() {
       </section>
       {/* HERO*/}
       <section className="px-8 py-32 text-center max-w-3xl mx-auto">
+        <Image src={productDemo} alt="Product Demo" />
+
         <h1 className="text-4x lg:text-5xl font-extrabold mb-6">
           Collect Costumers to build better products
         </h1>
