@@ -1,7 +1,8 @@
+"use client";
+
 import Link from "next/link";
 
 const ButtonLogin = ({ isLoggedIn, name, extraStyle }) => {
-  console.log(extraStyle);
   if (isLoggedIn) {
     return (
       <Link
