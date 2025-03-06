@@ -13,7 +13,7 @@ export default function Home() {
       {/* HEADER*/}
       <section className="bg-base-300">
         <div className="flex justify-between items-center px-8 py-2 max-w-5xl mx-auto">
-          <div className="font-bold">Voichita's Portofolio</div>
+          <div className="font-bold">Voichita&apos;s Portofolio</div>
           <div className="space-x-4">
             <NavLink href="#pricing">Pricing</NavLink>
             <NavLink href="#faq">FAQ</NavLink>
