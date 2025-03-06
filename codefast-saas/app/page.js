@@ -1,24 +1,22 @@
 import ButtonLogin from "@/components/ButtonLogin";
 import FAQListItem from "@/components/FAQListItem";
+import NavLink from "@/components/NavLink";
 import Image from "next/image";
-import productDemo from "@/app/productDemo.jpeg";
+import productDemo from "@/app/images/1.png";
 
 export default function Home() {
   const isLoggedIn = true;
   const name = "Maria";
+
   return (
     <main>
       {/* HEADER*/}
-      <section className="bg-base-200">
+      <section className="bg-base-300">
         <div className="flex justify-between items-center px-8 py-2 max-w-5xl mx-auto">
-          <div className="font-bold">CodeFastSaaS</div>
-          <div className="space-x-4 max-md:hidden">
-            <a className="link link-hover" href="#pricing">
-              Pricing
-            </a>
-            <a className="link link-hover" href="#faq">
-              FAQ
-            </a>
+          <div className="font-bold">Voichita's Portofolio</div>
+          <div className="space-x-4">
+            <NavLink href="#pricing">Pricing</NavLink>
+            <NavLink href="#faq">FAQ</NavLink>
           </div>
           <div>
             <ButtonLogin isLoggedIn={isLoggedIn} name={name} />
@@ -36,10 +34,10 @@ export default function Home() {
 
         <div>
           <h1 className="text-4x lg:text-5xl font-extrabold mb-6">
-            Collect Costumers to build better products
+            Collect Projects to build better products
           </h1>
-          <div className="opacity-90 mb-10">
-            Create a feedback board in minutes, prioritize features, and build
+          <div className="opacity-90 mb-10 ">
+            Create a portofolio board in years, prioritize features, and build
             products your customers will love.
           </div>
           <ButtonLogin isLoggedIn={isLoggedIn} name={name} />
@@ -47,7 +45,7 @@ export default function Home() {
       </section>
 
       {/* PRICING*/}
-      <section className="bg-base-200" id="pricing">
+      <section className="bg-base-300" id="pricing">
         <div className="py-32 px-8 max-w-3xl mx-auto">
           <p className="text-sm uppercase font-medium text-center text-primary mb-4">
             Pricing
@@ -58,7 +56,7 @@ export default function Home() {
 
           <div className="p-8 bg-base-100 w-96 rounded-3xl mx-auto space-y-6">
             <div className="flex gap-2 items-baseline">
-              <div className="text-4xl font-black">$19</div>
+              <div className="text-4xl font-black">£19</div>
               <div className="uppercase text-sm font-medium opacity:60">
                 /month
               </div>
@@ -101,7 +99,7 @@ export default function Home() {
       </section>
 
       {/* FAQ */}
-      <section className="bg-base-200" id="faq">
+      <section className="bg-base-100" id="faq">
         <div className="py-32 px-8 max-w-3xl mx-auto">
           <p className="text-sm uppercase font-medium text-center text-primary mb-4">
             FAQ
@@ -118,6 +116,23 @@ export default function Home() {
               <FAQListItem key={qa.question} qa={qa} />
             ))}
           </ul>
+        </div>
+      </section>
+
+      {/* FOOTER*/}
+      <section className="bg-base-300">
+        <div className="flex justify-center items-center px-8 py-2 max-w-5xl mx-auto">
+          <div className="space-x-4">
+            <NavLink href="https://github.com/sabovoichita" target="_blank">
+              Github
+            </NavLink>
+            <NavLink
+              href="https://www.linkedin.com/in/voichita-maria-truscai/"
+              target="_blank"
+            >
+              LinkedIn
+            </NavLink>
+          </div>
         </div>
       </section>
     </main>
