@@ -3,10 +3,11 @@ const nextConfig = {
   output: "export",
   images: {
     unoptimized: true,
-    domains: ["lh3.googleusercontent.com"],
   },
   basePath: "/portofolio",
   assetPrefix: "/portofolio/",
+  trailingSlash: true,
+  distDir: "out",
 };
 
 export default nextConfig;
